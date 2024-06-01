@@ -4,10 +4,13 @@
 3. "node": "16.14.2"
 
 #How to Start
-npm install
-npm start (or "npm run build" first)
+1. npm install
+2. npm start (or "npm run build" first)
 
 #Account
-
-Admin Email : admin@gmail.com Password : 12345678
-Guest Email : guest@gmail.com Password : rahasia123
+1. Admin
+   Email : admin@gmail.com
+   Password : 12345678
+2. Guest
+   Email : guest@gmail.com
+   Password : rahasia123
