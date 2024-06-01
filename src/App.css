@@ -36,3 +36,464 @@
     transform: rotate(360deg);
   }
 }
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-header img {
+  width: 100px;
+}
+
+.login-footer {
+  margin: 10px;
+}
+
+.login-error {
+  color: red;
+  font-size: smaller;
+}
+
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #007bff;
+  padding-top: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-nav li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-nav li:hover {
+  background-color: #0056b3; 
+}
+
+.app-nav span {
+  margin: 20px;
+  font-weight: 700;
+}
+
+.ticket-app {
+  margin-left: 220px;
+  overflow-x: auto;
+}
+
+.ticket-app h1 {
+  text-align: center;
+}
+
+.overview-container {
+  margin-left: 220px;
+  overflow-x: auto;
+}
+
+.table-ticket {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table-ticket th {
+  color: rgb(105, 105, 105);
+  padding: 15px;
+  font-size: small;
+}
+
+.table-ticket th:hover {
+  color: white;
+}
+
+.table-ticket td {
+  padding: 15px;
+  text-align: center;
+}
+
+.table-ticket tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-ticket tr:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.high {
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.normal {
+  background-color: rgb(0, 169, 23);
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.low {
+  background-color: rgb(221, 255, 0);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.pagination button {
+  margin-left: 5px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.rows-perpage {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.rows-perpage label {
+  font-size: small;
+  margin-right: 5px;
+}
+
+.hamburger {
+  display: none;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  position: absolute;
+  height: 3px;
+  background-color: #333;
+  width: 100%;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+
+.app-nav.open {
+  transform: translateX(0px);
+}
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status-boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.status-box {
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.status-box .total{
+  margin: 50px;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.graph {
+  display: block;
+  width: 75%;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.chart-area {
+  height: 250px;
+  width: 95%;
+}
+
+.list-groups {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.unresolved-tickets {
+  width: 45%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.table-list {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table-list td {
+  padding: 15px;
+  text-align: left;
+}
+
+.search-task {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-profile{
+  display: flex;
+  float: right;
+  align-content: center;
+  align-items: center;
+}
+
+.overview-profile img {
+  width: 50px;
+  margin: 10px;
+}
+
+.btn-submit {
+  float: right;
+}
+
+li link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-body {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px; 
+}
+
+.btn-submit, .btn-close, .btn-add {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-add {
+  color: white;
+  border: 2px solid #003e7f;
+  background-color: #0056b3; 
+}
+
+.btn-submit {
+  color: white;
+  border: 2px solid #005709;
+  background-color: #05aa0e; 
+}
+
+.btn-approve {
+  padding: 2px 4px;
+  color: white;
+  border: 2px solid #005709;
+  background-color: #05aa0e; 
+}
+
+.btn-close {
+  color: white;
+  border: 2px solid #e10505;
+  background-color: #7b0101; 
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.app .button {
+  float: right;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid var(--button-bg-color);
+  color: var(--button-text-color);
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.app .button:hover {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+}
+
+.app .button:active {
+  transform: translateY(1px);
+}
+
+.dark-theme {
+  --button-bg-color: #343a40;
+  --button-text-color: #fff;
+  background-color: #001a35;
+}
+
+.dark-theme .ticket-app h1 {
+  color: white;
+}
+
+.dark-theme .table-ticket th, td{
+  color: white;
+}
+
+.dark-theme .table-ticket tr:nth-child(even) {
+  background-color: #282c34;
+}
+
+.dark-theme .overview-profile {
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  .login-form {
+    width: 100%;
+    padding: 10px;
+  }
+  .table-ticket td {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #fff;
+  }
+
+  .app-nav {
+    display: none;
+    transform: translateX(-220px);
+  }
+
+  .ticket-app {
+    margin: 2px;
+  }
+
+  .status-boxes {
+    flex-direction: column;
+  }
+
+  .status-box {
+    margin-bottom: 20px;
+  }
+}
